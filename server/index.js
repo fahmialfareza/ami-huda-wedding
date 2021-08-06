@@ -2,6 +2,7 @@ require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 const path = require('path');
 const fs = require('fs');
 const http = require('http');
+const socketio = require('socket.io');
 const express = require('express');
 const next = require('next');
 const mongoSanitize = require('express-mongo-sanitize');
@@ -25,15 +26,11 @@ app.prepare().then(() => {
 
   const server = express();
 
-  const httpServer = require('http').createServer(server);
+  const httpServer = http.createServer(server);
   const options = {
     /* ... */
   };
-  const io = require('socket.io')(httpServer, options);
-
-  io.on('connection', (socket) => {
-    /* ... */
-  });
+  const io = socketio(httpServer, options);
 
   // CORS
   server.use(cors());
@@ -45,6 +42,12 @@ app.prepare().then(() => {
       extended: true,
     })
   );
+
+  // Using socket.io to controllers
+  server.use(async function (req, res, next) {
+    req.io = io;
+    next();
+  });
 
   // Sanitize data
   server.use(mongoSanitize());
@@ -96,6 +99,14 @@ app.prepare().then(() => {
   });
 
   server.use(errorHandler);
+
+  /* Socket.io */
+  io.on('connection', (socket) => {
+    /* ... */
+    socket.on('disconnect', (reason) => {
+      console.log(socket.id + ' disconnected because ' + reason);
+    });
+  });
 
   httpServer.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 });

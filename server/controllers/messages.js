@@ -16,6 +16,7 @@ class Messages {
       const data = await message.create(req.body);
 
       // Socket io
+      req.io.emit('message', data);
 
       res.status(201).json({ data });
     } catch (error) {
