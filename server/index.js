@@ -1,6 +1,7 @@
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 const path = require('path');
 const fs = require('fs');
+const http = require('http');
 const express = require('express');
 const next = require('next');
 const mongoSanitize = require('express-mongo-sanitize');
@@ -23,6 +24,16 @@ app.prepare().then(() => {
   const messageRoutes = require('./routes/messages');
 
   const server = express();
+
+  const httpServer = require('http').createServer(server);
+  const options = {
+    /* ... */
+  };
+  const io = require('socket.io')(httpServer, options);
+
+  io.on('connection', (socket) => {
+    /* ... */
+  });
 
   // CORS
   server.use(cors());
@@ -86,5 +97,5 @@ app.prepare().then(() => {
 
   server.use(errorHandler);
 
-  server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+  httpServer.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 });
