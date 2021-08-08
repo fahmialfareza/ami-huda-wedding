@@ -45,13 +45,13 @@ function Akad() {
       <section id="rsvp">
         <div className="container mt-12 ">
           <div className="text-center">
-            <div className="row ">
+            <div className="row">
               <div className="col-sm-4">
                 <div className="d-flex flex-row">
                   <div className="align-self-center mr-5">
                     <img src="./img/swirl-aboutus.svg" alt="" />
                   </div>
-                  <div className="text-left align-self-center font-play ml-2">
+                  <div className="text-left akad align-self-center font-play ml-2">
                     <h2 className="dark-gray">Akad</h2>
                     <h3 className="light-gray">08:00 WIB</h3>
                   </div>
@@ -59,7 +59,7 @@ function Akad() {
               </div>
               <div className="col-sm-4 d-flex flex-row">
                 <div className=" align-self-center">
-                  <div className="text-left align-self-center font-play ml-2">
+                  <div className="text-left akad align-self-center font-play ml-2">
                     <h2 className="dark-gray">
                       Live On <img src="./img/ig-color.svg" alt="" />{' '}
                     </h2>
@@ -69,7 +69,7 @@ function Akad() {
               </div>
               <div className="col-sm-4">
                 <div className="d-flex flex-row">
-                  <div className="text-left align-self-center font-play ml-2">
+                  <div className="text-left akad align-self-center font-play ml-2">
                     <h2 className="dark-gray">
                       Lokasi{' '}
                       <a className="cs-btn dark-gray " href="#">

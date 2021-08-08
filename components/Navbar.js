@@ -2,7 +2,7 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="navbar navbar-expand-lg navbar-light nav-color fixed-top mb-4 mt-4"
+      className="navbar navbar-expand-md navbar-expand-sm navbar-light nav-color fixed-top mb-4 mt-4"
     >
       <div id="navbar-list" className="mx-auto mt-2 mb-2">
         <div className="collapse navbar-collapse  " id="navbarSupportedContent">
