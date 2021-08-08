@@ -3,7 +3,7 @@ const { message } = require('../models');
 class Messages {
   async getMessages(req, res, next) {
     try {
-      const data = await message.find();
+      const data = await message.find().sort('-createdAt');
 
       res.status(200).json({ data });
     } catch (error) {
@@ -13,7 +13,8 @@ class Messages {
 
   async createMessage(req, res, next) {
     try {
-      const data = await message.create(req.body);
+      let data = await message.create(req.body);
+      data = await message.find().sort('-createdAt');
 
       // Socket io
       req.io.emit('message', data);
