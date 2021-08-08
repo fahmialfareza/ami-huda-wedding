@@ -21,7 +21,7 @@ function Akad() {
 
     const config = {
       method: 'post',
-      url: process.env.API_URL,
+      url: process.env.NEXT_PUBLIC_API_URL,
       headers: {
         'Content-Type': 'application/json',
       },
