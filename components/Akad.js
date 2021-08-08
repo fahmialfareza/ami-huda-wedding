@@ -21,7 +21,7 @@ function Akad() {
 
     const config = {
       method: 'post',
-      url: 'http://localhost:3000/api/messages',
+      url: process.env.API_URL,
       headers: {
         'Content-Type': 'application/json',
       },
