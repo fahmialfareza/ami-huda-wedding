@@ -40,9 +40,7 @@ export default function Home({ messages }) {
   );
 }
 
-export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
+export async function getServerSideProps(context) {
   const res = await fetch('http://localhost:3000/api/messages');
   let messages = await res.json();
   messages = messages.data;
