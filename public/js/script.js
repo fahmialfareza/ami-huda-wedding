@@ -25,6 +25,7 @@ $(document).ready(function () {
     window.matchMedia("(max-width: 640px)").matches ||
     window.matchMedia("(max-width: 667px)").matches ||
     window.matchMedia("(max-width: 800px)").matches ||
+    window.matchMedia("(max-width: 300px)").matches ||
     window.matchMedia("(max-width: 450px)").matches
   ) {
     $("#navbar").removeClass("fixed-top mb-4 mt-4");
@@ -45,6 +46,9 @@ $(document).ready(function () {
     $(".chat-ornament-bottom").removeClass("mr-2");
     $(".chat").removeClass("mr-7");
     $(".chat").addClass("mr-2");
+    $(
+      'link[rel=stylesheet][href~="https://unpkg.com/aos@2.3.1/dist/aos.css"]'
+    ).remove();
     // $(".akad").removeClass("text-left");
   }
 
