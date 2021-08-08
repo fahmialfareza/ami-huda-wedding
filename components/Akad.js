@@ -88,7 +88,7 @@ function Akad() {
         </div>
       </section>
 
-      <section className="mt-5 mb-7">
+      <section className="mt-5 mb-5">
         <div className="container">
           <div className="row ">
             <div className="pesan-rspv mb-5 text-center mr-3">
