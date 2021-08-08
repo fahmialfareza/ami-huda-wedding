@@ -24,34 +24,8 @@ $(document).ready(function () {
     window.matchMedia("(max-width: 767px)").matches ||
     window.matchMedia("(max-width: 640px)").matches ||
     window.matchMedia("(max-width: 667px)").matches ||
-    window.matchMedia("(max-width: 800px)").matches
-  ) {
-    $("#navbar").removeClass("fixed-top mb-4 mt-4");
-    $("#navbar").addClass("fixed-bottom");
-    $("#navbar-list").removeClass("mx-auto");
-    $("#navbar-list").removeClass("mb-2");
-    $("#navbar-list").removeClass("mt-2");
-    $("#btn-ami").removeClass("ml-4");
-    $("#btn-ami").addClass("ml-1");
-    $("#btn-huda").removeClass("ml-4");
-    $("#btn-huda").addClass("ml-1 mr-1");
-    $("#rsvp").removeClass("d-flex");
-    $(".pesan-rspv").removeClass("col mr-3");
-    $(".pesan-rspv").addClass("col-sm-4");
-    $(".waktu").removeClass("col");
-    $(".waktu").addClass("col-sm-4 text-center");
-    $(".chat-ornament-top").removeClass("mr-2");
-    $(".chat-ornament-bottom").removeClass("mr-2");
-    $(".chat").removeClass("mr-7");
-    $(".chat").addClass("mr-2");
-    // $(".akad").removeClass("text-left");
-  }
-
-  if (
-    window.matchMedia("(min-width: 767px)").matches ||
-    window.matchMedia("(min-width: 640px)").matches ||
-    window.matchMedia("(min-width: 667px)").matches ||
-    window.matchMedia("(min-width: 400px)").matches
+    window.matchMedia("(max-width: 800px)").matches ||
+    window.matchMedia("(max-width: 450px)").matches
   ) {
     $("#navbar").removeClass("fixed-top mb-4 mt-4");
     $("#navbar").addClass("fixed-bottom");
