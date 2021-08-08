@@ -31,6 +31,8 @@ function Akad() {
     try {
       await axios(config);
 
+      toast.success('Pesan dan doa kamu terkirim!');
+
       setName('');
       setMessage('');
     } catch (error) {
