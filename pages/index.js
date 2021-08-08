@@ -41,7 +41,9 @@ export default function Home({ messages }) {
 }
 
 export async function getServerSideProps(context) {
-  const res = await fetch('http://localhost/api/messages');
+  const res = await fetch(
+    'https://ami-huda-wedding-test.herokuapp.com/api/messages'
+  );
   let messages = await res.json();
   messages = messages.data;
 
