@@ -62,7 +62,7 @@ function WalimatulUrsy() {
           <div className="row ">
             {/* <!-- <div id="space-1" className="col space"></div> --> */}
             <div
-              className="col-sm-3 waktu mb-3 "
+              className="col-lg-3 col-6 waktu mb-3 "
               data-aos="flip-left"
               data-aos-delay="600"
             >
@@ -72,7 +72,7 @@ function WalimatulUrsy() {
               </div>
             </div>
             <div
-              className="col-sm-3 waktu  mb-3 "
+              className="col-lg-3 col-6 waktu  mb-3 "
               data-aos="flip-right"
               data-aos-delay="800"
             >
@@ -82,7 +82,7 @@ function WalimatulUrsy() {
               </div>
             </div>
             <div
-              className="col-sm-3 waktu  mb-3 "
+              className="col-lg-3 col-6 waktu  mb-3 "
               data-aos="flip-left"
               data-aos-delay="1000"
             >
@@ -92,7 +92,7 @@ function WalimatulUrsy() {
               </div>
             </div>
             <div
-              className="col-sm-3 waktu mb-3 "
+              className="col-lg-3 col-6 waktu mb-3 "
               data-aos="flip-right"
               data-aos-delay="1200"
             >

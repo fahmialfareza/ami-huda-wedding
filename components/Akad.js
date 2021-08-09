@@ -44,55 +44,65 @@ function Akad() {
     <>
       <section id="rsvp">
         <div className="container mt-12 ">
-          <div className="text-center">
-            <div className="row">
-              <div className="col-sm-4">
-                <div className="d-flex flex-row">
-                  <div className="align-self-center mr-5">
-                    <img src="./img/swirl-aboutus.svg" alt="" />
-                  </div>
-                  <div className="text-left akad align-self-center font-play ml-2">
-                    <h2 className="dark-gray">Akad</h2>
-                    <h3 className="light-gray">08:00 WIB</h3>
-                  </div>
+          {/* <div className="text-center"> */}
+          <div className="d-flex flex-col">
+            <div className="col-sm-4">
+              <div className="d-flex flex-col flex-row">
+                <div className="align-self-center  mr-5">
+                  <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
+                </div>
+                <div className="text-left akad align-self-center font-play ml-2">
+                  <h2 className="dark-gray text-center">Akad</h2>
+                  <h3 className="light-gray">08:00 WIB</h3>
                 </div>
               </div>
-              <div className="col-sm-4 d-flex flex-row">
-                <div className=" align-self-center">
-                  <div className="text-left akad align-self-center font-play ml-2">
-                    <h2 className="dark-gray">
-                      Live On <img src="./img/ig-color.svg" alt="" />{' '}
-                    </h2>
-                    <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
-                  </div>
+            </div>
+            <div className="col-sm-4 flex-col d-flex flex-row">
+              <div className=" align-self-center">
+                <div className="text-left akad align-self-center font-play ml-2">
+                  <h2 className="dark-gray">
+                    Live On <img src="./img/ig-color.svg" alt="" />{" "}
+                  </h2>
+                  <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
                 </div>
               </div>
-              <div className="col-sm-4">
-                <div className="d-flex flex-row">
-                  <div className="text-left akad align-self-center font-play ml-2">
-                    <h2 className="dark-gray">
-                      Lokasi{' '}
-                      <a className="cs-btn dark-gray " href="#">
-                        Lihat Map
-                      </a>{' '}
-                    </h2>
-                    <h4 className="light-gray">Kuningan, Jawa Barat</h4>
-                  </div>
-                  <div className="align-self-center ml-5">
-                    <img src="./img/swirl-aboutus2.svg" alt="" />
-                  </div>
+            </div>
+            <div className="col-sm-4">
+              <div className="d-flex flex-col flex-row">
+                <div className="text-left akad align-self-center font-play ml-2">
+                  <h2 className="dark-gray">
+                    Lokasi{" "}
+                    <a className="cs-btn dark-gray " href="#">
+                      Lihat Map
+                    </a>{" "}
+                  </h2>
+                  <h4 className="light-gray">Kuningan, Jawa Barat</h4>
+                </div>
+                <div className="align-self-center ml-5">
+                  <img
+                    className="swirl"
+                    src="./img/swirl-aboutus2.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
           </div>
+          {/* </div> */}
         </div>
       </section>
 
       <section className="mt-5 mb-7">
         <div className="container">
           <div className="row ">
-            <div className="pesan-rspv mb-5 text-center mr-3">
-              <div id="rsvp" className="d-flex flex-row align-self-center mb-4">
+            <div
+              id="col-rsvp"
+              className="col d-flex flex-col flex-column pesan-rspv mb-5  mr-3"
+            >
+              <div
+                id="rsvp"
+                className="d-flex flex-row align-items-center mb-4"
+              >
                 <img src="./img/floral-rsvp-img-1.svg" alt="" />
                 <h1 className="font-play dark-gray mr-3 ml-3">RSVP</h1>
                 <img src="./img/floral-rsvp-img-2.svg" alt="" />
@@ -108,7 +118,7 @@ function Akad() {
               </div>
             </div>
 
-            <div className="col  pesan-rspv">
+            <div className="col pesan-rspv">
               <div className="form-group ">
                 <textarea
                   className="form-control font-play"

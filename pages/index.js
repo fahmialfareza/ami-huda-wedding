@@ -21,7 +21,7 @@ export default function Home({ messages }) {
 
       <ToastContainer />
 
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Header />
 

@@ -311,6 +311,14 @@ textarea {
 // Media Query
 
 @media only screen and (max-width: 600px) {
+    .flex-col{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .swirl{
+        display: none;
+    }
     .nav-color {
         background-color: #fff;
     }

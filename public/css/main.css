@@ -305,6 +305,21 @@ textarea:focus::placeholder {
 }
 
 @media only screen and (max-width: 600px) {
+  .flex-col {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .swirl {
+    display: none;
+  }
   .nav-color {
     background-color: #fff;
   }

@@ -46,6 +46,8 @@ $(document).ready(function () {
     $(".chat-ornament-bottom").removeClass("mr-2");
     $(".chat").removeClass("mr-7");
     $(".chat").addClass("mr-2");
+    $("#col-rsvp").removeClass("col");
+    $("#col-rsvp").addClass("col-lg-4");
     $(
       'link[rel=stylesheet][href~="https://unpkg.com/aos@2.3.1/dist/aos.css"]'
     ).remove();
