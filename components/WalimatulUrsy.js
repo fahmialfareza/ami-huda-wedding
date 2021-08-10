@@ -67,7 +67,9 @@ function WalimatulUrsy() {
               data-aos-delay="600"
             >
               <div className="hari time ">
-                <h1 className="font-play dark display-3">24</h1>
+                <h1 id="days" className="font-play dark display-3">
+                  24
+                </h1>
                 <p>Hari</p>
               </div>
             </div>
@@ -77,8 +79,10 @@ function WalimatulUrsy() {
               data-aos-delay="800"
             >
               <div className="hari time">
-                <h1 className="font-play dark display-3">24</h1>
-                <p>Hari</p>
+                <h1 id="hours" className="font-play dark display-3">
+                  24
+                </h1>
+                <p>Jam</p>
               </div>
             </div>
             <div
@@ -87,8 +91,10 @@ function WalimatulUrsy() {
               data-aos-delay="1000"
             >
               <div className="hari time">
-                <h1 className="font-play dark display-3">24</h1>
-                <p>Hari</p>
+                <h1 id="minutes" className="font-play dark display-3">
+                  24
+                </h1>
+                <p>Menit</p>
               </div>
             </div>
             <div
@@ -97,8 +103,10 @@ function WalimatulUrsy() {
               data-aos-delay="1200"
             >
               <div className="hari time">
-                <h1 className="font-play dark display-3">24</h1>
-                <p>Hari</p>
+                <h1 id="seconds" className="font-play dark display-3">
+                  24
+                </h1>
+                <p>Detik</p>
               </div>
             </div>
 

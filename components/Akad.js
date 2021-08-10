@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
-import axios from "axios";
-import { toast } from "react-toastify";
+import { useState } from 'react';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 function Akad() {
-  const [name, setName] = useState("");
-  const [attended, setAttended] = useState("false");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [attended, setAttended] = useState('false');
+  const [message, setMessage] = useState('');
 
   const onSubmitMessage = async (event) => {
     event.preventDefault();
 
     if (!name || !attended || !message) {
-      toast.error("Nama dan Pesan Harus diisi!");
+      toast.error('Nama dan Pesan Harus diisi!');
 
       return;
     }
@@ -20,10 +20,10 @@ function Akad() {
     const data = JSON.stringify({ name, attended, message });
 
     const config = {
-      method: "post",
+      method: 'post',
       url: process.env.NEXT_PUBLIC_API_URL,
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       data: data,
     };
@@ -31,10 +31,10 @@ function Akad() {
     try {
       await axios(config);
 
-      toast.success("Pesan dan doa kamu terkirim!");
+      toast.success('Pesan dan doa kamu terkirim!');
 
-      setName("");
-      setMessage("");
+      setName('');
+      setMessage('');
     } catch (error) {
       console.log(error.message);
     }
@@ -71,7 +71,7 @@ function Akad() {
               <div className=" align-self-center">
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray">
-                    Live On <img src="./img/ig-color.svg" alt="" />{" "}
+                    Live On <img src="./img/ig-color.svg" alt="" />{' '}
                   </h2>
                   <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
                 </div>
@@ -87,10 +87,10 @@ function Akad() {
                 </div>
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray">
-                    Lokasi{" "}
+                    Lokasi{' '}
                     <a className="cs-btn dark-gray " href="#">
                       Lihat Map
-                    </a>{" "}
+                    </a>{' '}
                   </h2>
                   <h4 className="light-gray">Kuningan, Jawa Barat</h4>
                 </div>
@@ -117,7 +117,9 @@ function Akad() {
             >
               <div id="rsvp" className="row flex-nowrap  mx-auto mb-4">
                 <img src="./img/floral-rsvp-img-1.svg" alt="" />
-                <h1 className="font-play dark-gray mr-3 ml-3 doa-pesan">Doa & Pesan</h1>
+                <h1 className="font-play dark-gray mr-3 ml-3 doa-pesan">
+                  Doa & Pesan
+                </h1>
                 <img src="./img/floral-rsvp-img-2.svg" alt="" />
               </div>
               <div className="align-self-center mb-5">
@@ -175,7 +177,12 @@ function Akad() {
                   />
                 </div>
                 <div className="d-flex flex-row align-self-center mb-4">
-                  <a className="group-btn dark-gray font-play mr-3" href="#">
+                  <a
+                    className="group-btn dark-gray font-play mr-3"
+                    href="https://s.id/grupikhwan"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Gabung Grup
                     <img
                       className="ml-1"
@@ -184,7 +191,12 @@ function Akad() {
                       alt=""
                     />
                   </a>
-                  <a className="group-btn dark-gray font-play" href="#">
+                  <a
+                    className="group-btn dark-gray font-play"
+                    href="https://s.id/grupakhwat"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     Gabung Grup
                     <img
                       className="ml-1"

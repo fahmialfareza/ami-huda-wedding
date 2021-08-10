@@ -48,6 +48,8 @@ function Mempelai() {
               alt=""
             />
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://instagram.com/ami.masturoh"
               className="ig-btn font-play masturoh"
               data-aos="zoom-in-right"
@@ -56,6 +58,8 @@ function Mempelai() {
               <i className="fab fa-instagram mr-2"></i>@ami.masturoh
             </a>
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://instagram.com/hudagraph"
               className="ig-btn font-play huda"
               data-aos="zoom-in-left"
