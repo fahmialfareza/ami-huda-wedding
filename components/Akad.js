@@ -45,15 +45,15 @@ function Akad() {
       <section id="rsvp">
         <div className="container mt-12 ">
           {/* <div className="text-center"> */}
-          <div className="d-flex flex-col">
-            <div className="col-sm-4 mb-4">
-              <div className="d-flex flex-row ">
+          <div className="d-flex flex-row justify-content-around justify-content-sm-center flex-col">
+            <div className="col-sm-auto d-flex mb-4 ">
+              <div className="row justify-content-center mx-auto">
                 <div className="align-self-center  mr-1">
                   <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
                 </div>
-                <div className="text-left akad align-self-center font-play ml-2">
+                <div className="akad font-play ml-2">
                   <h2 className="dark-gray text-center">Akad</h2>
-                  <h3 className="light-gray">08:00 WIB</h3>
+                  <h3 className="text-center light-gray">08:00 WIB</h3>
                 </div>
                 <div className="align-self-center ml-1">
                   <img
@@ -64,33 +64,41 @@ function Akad() {
                 </div>
               </div>
             </div>
-            <div className="col-sm-4 d-flex flex-row mb-3">
-              <div className="align-self-center  mr-1">
-                <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
-              </div>
-              <div className=" align-self-center">
-                <div className="text-left akad align-self-center font-play ml-2">
-                  <h2 className="dark-gray">
-                    Live On <img src="./img/ig-color.svg" alt="" />{' '}
-                  </h2>
-                  <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
+
+            <div className="col-sm-auto d-flex flex-row  mb-4">
+              <div className="d-flex justify-content-center flex-sm-nowrap  ">
+                <div className="align-self-center  mr-1">
+                  <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
+                </div>
+                <div className=" align-self-center">
+                  <div className="text-left akad align-self-center font-play ml-2">
+                    <h2 className="dark-gray">
+                      Live On <img src="./img/ig-color.svg" alt="" />{" "}
+                    </h2>
+                    <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
+                  </div>
+                </div>
+                <div className="align-self-center ml-1">
+                  <img
+                    className="swirl"
+                    src="./img/swirl-aboutus2.svg"
+                    alt=""
+                  />
                 </div>
               </div>
-              <div className="align-self-center ml-1">
-                <img className="swirl" src="./img/swirl-aboutus2.svg" alt="" />
-              </div>
             </div>
-            <div className="col-sm-4">
+
+            <div className="col-sm-auto">
               <div className="d-flex flex-row">
                 <div className="align-self-center  mr-1">
                   <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
                 </div>
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray">
-                    Lokasi{' '}
+                    Lokasi{" "}
                     <a className="cs-btn dark-gray " href="#">
                       Lihat Map
-                    </a>{' '}
+                    </a>{" "}
                   </h2>
                   <h4 className="light-gray">Kuningan, Jawa Barat</h4>
                 </div>
@@ -104,8 +112,8 @@ function Akad() {
               </div>
             </div>
           </div>
-          {/* </div> */}
         </div>
+        {/* </div> */}
       </section>
 
       <section className="mt-5 mb-5">

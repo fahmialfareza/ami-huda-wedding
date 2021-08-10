@@ -146,7 +146,7 @@ nav {
 
     &:hover {
         text-decoration: none;
-        background-color: $pink;
+        background-color: $dark-gray;
         color: white !important;
         border: 1px solid white;
 
@@ -318,7 +318,14 @@ textarea {
         object-fit: cover;
         border-radius: 15px;
     }
+.flex-center {
+     align-items: center;
+    justify-content: center;
+}
 
+.flex-between{
+    align-content: space-between; 
+}
 // Media Query
 
 @media only screen and (max-width: 600px) {
@@ -433,10 +440,6 @@ textarea {
         width: 350px !important;
     }
 
-    footer {
-        display: none;
-    }
-
     .img-card {
         width: 100%;
         height: 100%;
@@ -453,7 +456,7 @@ textarea {
         border-radius: 28px;
         display: inline-block;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 12px !important;
         font-weight: bold;
         border: 1px solid $dark-gray;
         padding: 10px 20px;
@@ -461,7 +464,7 @@ textarea {
 
         &:hover {
             text-decoration: none;
-            background-color: $pink;
+            background-color: $dark-gray;
             color: white !important;
             border: 1px solid white;
 
@@ -494,3 +497,23 @@ textarea {
     //  }
 }
 
+@media only screen and (max-width: 667px) {
+       .cs-btn {
+        border-radius: 28px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 10px !important;
+        font-weight: normal;
+        border: 1px solid $dark-gray;
+        padding: 8px 16px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            background-color: $dark-gray;
+            color: white !important;
+            border: 1px solid white;
+
+        }
+    }
+}

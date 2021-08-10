@@ -40,9 +40,9 @@ function Card() {
                         className="cs-btn font-play"
                         onClick={toggleVersionAmi}
                         style={{
-                          color: '#fff',
-                          border: '0px',
-                          backgroundColor: '#DD838F',
+                          color: "#fff",
+                          border: "0px",
+                          backgroundColor: "#676767",
                         }}
                       >
                         Versi Ami
@@ -62,12 +62,12 @@ function Card() {
                   {version === huda ? (
                     <div id="btn-huda" className="align-self-center ml-4">
                       <a
-                        className={'cs-btn font-play'}
+                        className={"cs-btn font-play"}
                         onClick={toggleVersionHuda}
                         style={{
-                          color: '#fff',
-                          border: '0px',
-                          backgroundColor: '#DD838F',
+                          color: "#fff",
+                          border: "0px",
+                          backgroundColor: "#676767",
                         }}
                       >
                         Versi Huda
@@ -76,7 +76,7 @@ function Card() {
                   ) : (
                     <div id="btn-huda" className="align-self-center ml-4">
                       <a
-                        className={'cs-btn dark-gray font-play'}
+                        className={"cs-btn dark-gray font-play"}
                         onClick={toggleVersionHuda}
                       >
                         Versi Huda

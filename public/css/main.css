@@ -136,7 +136,7 @@ nav {
 
 .cs-btn:hover {
   text-decoration: none;
-  background-color: #DD838F;
+  background-color: #676767;
   color: white !important;
   border: 1px solid white;
 }
@@ -318,6 +318,20 @@ textarea:focus::placeholder {
   border-radius: 15px;
 }
 
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-between {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
 @media only screen and (max-width: 600px) {
   .diamond {
     display: none;
@@ -422,9 +436,6 @@ textarea:focus::placeholder {
   .chat-ornament-bottom {
     width: 350px !important;
   }
-  footer {
-    display: none;
-  }
   .img-card {
     width: 100%;
     height: 100%;
@@ -439,7 +450,7 @@ textarea:focus::placeholder {
     border-radius: 28px;
     display: inline-block;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 12px !important;
     font-weight: bold;
     border: 1px solid #676767;
     padding: 10px 20px;
@@ -447,7 +458,7 @@ textarea:focus::placeholder {
   }
   .cs-btn:hover {
     text-decoration: none;
-    background-color: #DD838F;
+    background-color: #676767;
     color: white !important;
     border: 1px solid white;
   }
@@ -467,6 +478,25 @@ textarea:focus::placeholder {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .cs-btn {
+    border-radius: 28px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px !important;
+    font-weight: normal;
+    border: 1px solid #676767;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .cs-btn:hover {
+    text-decoration: none;
+    background-color: #676767;
+    color: white !important;
+    border: 1px solid white;
   }
 }
 /*# sourceMappingURL=main.css.map */
