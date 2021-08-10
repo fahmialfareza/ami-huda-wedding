@@ -12,9 +12,9 @@ function Mempelai() {
         />
       </div>
       <div className="container">
-        <div className="row flex-md-nowrap flex-lg-nowrap ">
-          <div className="col  align-self-center">
-            <div className="d-flex flex-row mb-3" data-aos="fade-right">
+        <div className="row flex-md-nowrap flex-sm-nowrap flex-lg-nowrap ">
+          <div className="col   align-self-center">
+            <div className="d-flex flex-center mb-3" data-aos="fade-right">
               <div className="align-self-center">
                 <img src="./img/swirl-aboutus.svg" alt="" />
               </div>
@@ -27,7 +27,7 @@ function Mempelai() {
               </div>
             </div>
             <div
-              className="text-left font-play "
+              className="text-center font-play "
               data-aos="fade-right"
               data-aos-delay="100"
             >
@@ -69,7 +69,7 @@ function Mempelai() {
             </a>
           </div>
           <div className="col align-self-center">
-            <div className="d-flex flex-row mb-2" data-aos="fade-left">
+            <div className="d-flex flex-center mb-2" data-aos="fade-left">
               <div className="align-self-center">
                 <img src="./img/swirl-aboutus.svg" alt="" />
               </div>
@@ -83,7 +83,8 @@ function Mempelai() {
             </div>
 
             <div
-              className="text-right font-play"
+              id="huda-description"
+              className="text-center font-play"
               data-aos="fade-left"
               data-aos-delay="100"
             >

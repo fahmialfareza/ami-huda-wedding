@@ -49,6 +49,8 @@ $(document).ready(function () {
     $(".chat").addClass("mr-0");
     $("#col-rsvp").removeClass("col");
     $("#col-rsvp").addClass("col-lg-4");
+    // $("#huda-description").removeClass("text-left");
+    // $("#huda-description").addClass("text-center");
     $(
       'link[rel=stylesheet][href~="https://unpkg.com/aos@2.3.1/dist/aos.css"]'
     ).remove();
