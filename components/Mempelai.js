@@ -12,8 +12,8 @@ function Mempelai() {
         />
       </div>
       <div className="container">
-        <div className="row ">
-          <div className="col align-self-center">
+        <div className="row flex-md-nowrap flex-lg-nowrap ">
+          <div className="col  align-self-center">
             <div className="d-flex flex-row mb-3" data-aos="fade-right">
               <div className="align-self-center">
                 <img src="./img/swirl-aboutus.svg" alt="" />
@@ -21,6 +21,9 @@ function Mempelai() {
               <div className="text-left align-self-center font-play ml-2">
                 <h2 className="dark-gray">Ami</h2>
                 <h3 className="light-gray">Masturoh</h3>
+              </div>
+              <div>
+                <img src="./img/swirl-aboutus2.svg" alt="" />
               </div>
             </div>
             <div
@@ -35,7 +38,7 @@ function Mempelai() {
             </div>
           </div>
           <div
-            className="col order-illustrasi align-self-center"
+            className="col mb-5 order-illustrasi align-self-center"
             data-aos="zoom-in-up"
             data-aos-delay="100"
           >
@@ -61,10 +64,13 @@ function Mempelai() {
               <i className="fab fa-instagram mr-2"></i>@hudagraph
             </a>
           </div>
-          <div className="col  align-self-center">
+          <div className="col align-self-center">
             <div className="d-flex flex-row mb-2" data-aos="fade-left">
+              <div className="align-self-center">
+                <img src="./img/swirl-aboutus.svg" alt="" />
+              </div>
               <div className="text-right align-self-center font-play mr-2">
-                <h3 className="light-gray">Masyikur</h3>
+                <h3 className="light-gray">Masykur</h3>
                 <h2 className="dark-gray">Huda</h2>
               </div>
               <div>

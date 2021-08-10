@@ -38,14 +38,15 @@ $(document).ready(function () {
     $("#btn-huda").removeClass("ml-4");
     $("#btn-huda").addClass("ml-1 mr-1");
     $("#rsvp").removeClass("d-flex");
-    $(".pesan-rspv").removeClass("col mr-3");
-    $(".pesan-rspv").addClass("col-sm-4");
+    // $(".pesan").removeClass("col mr-3");
     $(".waktu").removeClass("col");
     $(".waktu").addClass("col-sm-4 text-center");
     $(".chat-ornament-top").removeClass("mr-2");
     $(".chat-ornament-bottom").removeClass("mr-2");
-    $(".chat").removeClass("mr-7");
-    $(".chat").addClass("mr-2");
+    $(".chat-ornament-top").addClass("mx-auto");
+    $(".chat-ornament-bottom").addClass("mx-auto");
+    $(".chat").removeClass("mr-5");
+    $(".chat").addClass("mr-0");
     $("#col-rsvp").removeClass("col");
     $("#col-rsvp").addClass("col-lg-4");
     $(

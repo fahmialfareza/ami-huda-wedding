@@ -97,10 +97,10 @@ class MyDocument extends Document {
           />
 
           <link href="css/bootstrap.min.css" rel="stylesheet" />
-          <link 
+          {/* <link 
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
-          />
+          /> */}
 
           <link href="css/style.css" rel="stylesheet" />
           <link href="css/main.css" rel="stylesheet" />
@@ -117,7 +117,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           ></script>
           <script src="js/bootstrap.min.js"></script>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
           <script src="js/script.js"></script>
         </body>
       </Html>

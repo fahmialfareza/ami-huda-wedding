@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react';
-import axios from 'axios';
-import { toast } from 'react-toastify';
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 function Akad() {
-  const [name, setName] = useState('');
-  const [attended, setAttended] = useState('false');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [attended, setAttended] = useState("false");
+  const [message, setMessage] = useState("");
 
   const onSubmitMessage = async (event) => {
     event.preventDefault();
 
     if (!name || !attended || !message) {
-      toast.error('Nama dan Pesan Harus diisi!');
+      toast.error("Nama dan Pesan Harus diisi!");
 
       return;
     }
@@ -20,10 +20,10 @@ function Akad() {
     const data = JSON.stringify({ name, attended, message });
 
     const config = {
-      method: 'post',
+      method: "post",
       url: process.env.NEXT_PUBLIC_API_URL,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       data: data,
     };
@@ -31,10 +31,10 @@ function Akad() {
     try {
       await axios(config);
 
-      toast.success('Pesan dan doa kamu terkirim!');
+      toast.success("Pesan dan doa kamu terkirim!");
 
-      setName('');
-      setMessage('');
+      setName("");
+      setMessage("");
     } catch (error) {
       console.log(error.message);
     }
@@ -46,18 +46,28 @@ function Akad() {
         <div className="container mt-12 ">
           {/* <div className="text-center"> */}
           <div className="d-flex flex-col">
-            <div className="col-sm-4">
-              <div className="d-flex flex-col flex-row">
-                <div className="align-self-center  mr-5">
+            <div className="col-sm-4 mb-4">
+              <div className="d-flex flex-row ">
+                <div className="align-self-center  mr-1">
                   <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
                 </div>
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray text-center">Akad</h2>
                   <h3 className="light-gray">08:00 WIB</h3>
                 </div>
+                <div className="align-self-center ml-1">
+                  <img
+                    className="swirl"
+                    src="./img/swirl-aboutus2.svg"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
-            <div className="col-sm-4 flex-col d-flex flex-row">
+            <div className="col-sm-4 d-flex flex-row mb-3">
+              <div className="align-self-center  mr-1">
+                <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
+              </div>
               <div className=" align-self-center">
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray">
@@ -66,9 +76,15 @@ function Akad() {
                   <h6 className="light-gray">@hudagraph & @ami.masturoh</h6>
                 </div>
               </div>
+              <div className="align-self-center ml-1">
+                <img className="swirl" src="./img/swirl-aboutus2.svg" alt="" />
+              </div>
             </div>
             <div className="col-sm-4">
-              <div className="d-flex flex-col flex-row">
+              <div className="d-flex flex-row">
+                <div className="align-self-center  mr-1">
+                  <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
+                </div>
                 <div className="text-left akad align-self-center font-play ml-2">
                   <h2 className="dark-gray">
                     Lokasi{" "}
@@ -78,7 +94,7 @@ function Akad() {
                   </h2>
                   <h4 className="light-gray">Kuningan, Jawa Barat</h4>
                 </div>
-                <div className="align-self-center ml-5">
+                <div className="align-self-center ml-1">
                   <img
                     className="swirl"
                     src="./img/swirl-aboutus2.svg"
@@ -97,17 +113,14 @@ function Akad() {
           <div className="row ">
             <div
               id="col-rsvp"
-              className="col d-flex flex-col flex-column pesan-rspv mb-5  mr-3"
+              className="col d-flex flex-col  flex-column pesan-rspv mb-5  mr-3"
             >
-              <div
-                id="rsvp"
-                className="d-flex flex-row align-items-center mb-4"
-              >
+              <div id="rsvp" className="row flex-nowrap  mx-auto mb-4">
                 <img src="./img/floral-rsvp-img-1.svg" alt="" />
-                <h1 className="font-play dark-gray mr-3 ml-3">RSVP</h1>
+                <h1 className="font-play dark-gray mr-3 ml-3 doa-pesan">Doa & Pesan</h1>
                 <img src="./img/floral-rsvp-img-2.svg" alt="" />
               </div>
-              <div className="align-self-center">
+              <div className="align-self-center mb-5">
                 <input
                   className="font-play text-center"
                   type="text"
@@ -116,22 +129,22 @@ function Akad() {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-            </div>
 
-            <div className="col pesan-rspv">
-              <div className="form-group ">
-                <textarea
-                  className="form-control font-play"
-                  id="exampleFormControlTextarea1"
-                  placeholder="Tulis doa dan pesan untuk calon pengantin"
-                  rows="3"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
+              <div className="pesan-rspv col-sm-12">
+                <div className="form-group ">
+                  <textarea
+                    className="form-control font-play"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Tulis doa dan pesan untuk calon pengantin"
+                    rows="3"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                </div>
+                <button className="send-btn" onClick={onSubmitMessage}>
+                  <img src="./img/message.svg" alt="" />
+                </button>
               </div>
-              <button className="send-btn" onClick={onSubmitMessage}>
-                <img src="./img/message.svg" alt="" />
-              </button>
             </div>
 
             <div className="col pesan-rspv">
@@ -144,9 +157,10 @@ function Akad() {
                   <img src="./img/floral-rsvp-img-2.svg" alt="" />
                 </div>
                 <div className="align-self-center">
-                  <p className="font-play dark-gray">
-                    Yuk gabung grup nambah berkah
-                  </p>
+                  <h3 className="font-play dark-gray text-center mb-5">
+                    Untuk menambah keberkahan, kami mengundang rekan-rekan untuk
+                    khataman online melalui grup
+                  </h3>
                 </div>
                 <div className="d-flex flex-row align-self-center mb-4">
                   <img

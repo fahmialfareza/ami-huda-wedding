@@ -29,23 +29,23 @@ function Card() {
                   Kisah pertemuan kami berawal di Etos ID, program beasiswa
                   Lembaga Pengembangan Insani Dompet Dhuafa. Sebagai fasilitator
                   program di dua wilayah berbeda, Ami di Sumedang, saya di
-                  Malang.
-                </p>
-                <p className="card-text font-play dark-gray">
-                  Pertemuan kami sebagai rekan kerja selalu bertemu dalam
-                  virtual zoom, aktifitas kami tidak selalu bersinggungan
-                  langsung karena kerja regional berbeda. Selama 1 tahun pun tak
-                  pernah ada agenda offline untuk mempertemukan kami.
+                  Malang. <br /> <br /> Pertemuan kami sebagai rekan kerja
+                  selalu bertemu dalam virtual zoom, aktifitas kami tidak selalu
+                  bersinggungan langsung karena kerja regional berbeda. Selama 1
+                  tahun pun tak pernah ada agenda offline untuk mempertemukan
+                  kami. <br /> <br /> Waktu berlalu, selepas ramadhan 2021
+                  istikharah dan bersiap diri untuk membuka obrolan dengan orang
+                  tua. Orang tua dengan bijak mengizinkan saya untuk berani
+                  mengambil keputusan besar untuk meminang anak orang. Saya
+                  menghubungi Murabbi dan memproses ta’aruf. tak bisa offline
+                  online virtualpun jadi. <br /> <br /> Jarak, kondisi keluarga,
+                  dan perbedaan suku tak meruntuhkan niat baik didasari
+                  permohonan magfirah dan ridho Allah untuk menjalankan sunnah
+                  Rasulullah SAW. <br /> <br /> Semoga Allah beri kelancaran,
+                  dan keberkahan menuju pernikahan kami yang di langsungkan
+                  masih dalam suasana pandemi. Mohon doa dan restunya.
                 </p>
 
-                <p className="card-text font-play dark-gray">
-                  Waktu berlalu, selepas ramadhan 2021 istikharah dan bersiap
-                  diri untuk membuka obrolan dengan orang tua. Orang tua dengan
-                  bijak mengizinkan saya untuk berani mengambil ... <br />{' '}
-                  <a className="dark font-play font-weight-bold mb-4" href="">
-                    Read more ..
-                  </a>
-                </p>
                 <img src="./img/diamond.svg" alt="" className="diamond" />
               </div>
             </div>
