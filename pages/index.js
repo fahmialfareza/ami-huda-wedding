@@ -36,9 +36,9 @@ export default function Home({ messages }) {
 
       <Card />
 
-      <Footer />
-
       <Backsound />
+
+      <Footer />
     </>
   );
 }
