@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react';
-import axios from 'axios';
-import { toast } from 'react-toastify';
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 function Akad() {
-  const [name, setName] = useState('');
-  const [attended, setAttended] = useState('false');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [attended, setAttended] = useState("false");
+  const [message, setMessage] = useState("");
 
   const onSubmitMessage = async (event) => {
     event.preventDefault();
 
     if (!name || !attended || !message) {
-      toast.error('Nama dan Pesan Harus diisi!');
+      toast.error("Nama dan Pesan Harus diisi!");
 
       return;
     }
@@ -20,10 +20,10 @@ function Akad() {
     const data = JSON.stringify({ name, attended, message });
 
     const config = {
-      method: 'post',
+      method: "post",
       url: process.env.NEXT_PUBLIC_API_URL,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       data: data,
     };
@@ -31,10 +31,10 @@ function Akad() {
     try {
       await axios(config);
 
-      toast.success('Pesan dan doa kamu terkirim!');
+      toast.success("Pesan dan doa kamu terkirim!");
 
-      setName('');
-      setMessage('');
+      setName("");
+      setMessage("");
     } catch (error) {
       console.log(error.message);
     }
@@ -46,7 +46,7 @@ function Akad() {
         <div className="container mt-12 ">
           {/* <div className="text-center"> */}
           <div className="d-flex flex-row justify-content-around justify-content-sm-center flex-col">
-            <div className="col-sm-auto d-flex mb-4 ">
+            {/* <div className="col-sm-auto mb-4 ">
               <div className="row justify-content-center mx-auto">
                 <div className="align-self-center  mr-1">
                   <img
@@ -67,24 +67,39 @@ function Akad() {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-sm-auto d-flex mb-4 ">
-              <div className="row justify-content-center mx-auto">
+            <div className="col-sm-auto mb-4">
+              <div className="d-flex flex-row justify-content-center mx-auto">
                 <div className="align-self-center  mr-1">
-                  <img
-                    className="swirl "
-                    src="./img/swirl-aboutus.svg"
-                    alt=""
-                  />
+                  <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
                 </div>
-                <div className="akad font-play mr-5 ml-5">
-                  <h2 className="dark-gray text-center">Live On</h2>
-                  <h3 className="text-center light-gray">Instagram</h3>
+                <div className="text-center akad align-self-center font-play mr-5 ml-5">
+                  <h2 className="dark-gray">Akad</h2>
+                  <h4 className="light-gray">08:00 WIB</h4>
                 </div>
                 <div className="align-self-center ml-1">
                   <img
-                    className="swirl swirl-akad"
+                    className="swirl"
+                    src="./img/swirl-aboutus2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-auto mb-4">
+              <div className="d-flex flex-row justify-content-center mx-auto">
+                <div className="align-self-center  mr-1">
+                  <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
+                </div>
+                <div className="text-center akad align-self-center font-play mr-5 ml-5">
+                  <h2 className="dark-gray">Live On</h2>
+                  <h4 className="light-gray">Instagram</h4>
+                </div>
+                <div className="align-self-center ml-1">
+                  <img
+                    className="swirl"
                     src="./img/swirl-aboutus2.svg"
                     alt=""
                   />
@@ -93,13 +108,13 @@ function Akad() {
             </div>
 
             <div className="col-sm-auto">
-              <div className="d-flex flex-row">
+              <div className="d-flex flex-row justify-content-center mx-auto">
                 <div className="align-self-center  mr-1">
                   <img className="swirl" src="./img/swirl-aboutus.svg" alt="" />
                 </div>
                 <div className="text-center akad align-self-center font-play mr-5 ml-5">
                   <h2 className="dark-gray">
-                    Lokasi{' '}
+                    Lokasi{" "}
                     <a
                       className="cs-btn dark-gray "
                       href="https://goo.gl/maps/7mE7c1teMhunp8WBA"
@@ -107,7 +122,7 @@ function Akad() {
                       rel="noreferrer"
                     >
                       Lihat Map
-                    </a>{' '}
+                    </a>{" "}
                   </h2>
                   <h4 className="light-gray">Kuningan, Jawa Barat</h4>
                 </div>
