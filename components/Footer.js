@@ -3,7 +3,7 @@ function Footer() {
     <>
       <section className="pb-5">
         <div className="pb-5"></div>
-        <div className="pb-5"></div>
+        <div className="pb-0"></div>
       </section>
 
       <footer className="">

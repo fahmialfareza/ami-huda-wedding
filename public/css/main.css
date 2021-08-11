@@ -2,16 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400&display=swap");
 body {
   background-color: #F0E6E1 !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.mempelai {
+  font-size: 4rem !important;
 }
 
 .font-poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
 }
 
+.text-name {
+  font-size: 24px !important;
+}
+
 .font-play {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: normal;
 }
 
@@ -32,11 +40,11 @@ body {
 }
 
 .play-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.6rem;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
   line-height: 4.9rem;
-  background: #4C466D;
-  background: linear-gradient(180.43deg, #DC8989 33.93%, #4C466D 99.63%);
+  background: #4c466d;
+  background: linear-gradient(180.43deg, #dc8989 33.93%, #4c466d 99.63%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -110,12 +118,12 @@ nav {
 }
 
 .send-btn {
-  background: #4C466D;
+  background: #4c466d;
   border-radius: 20px 0px 10px;
   padding: 10px;
   position: absolute;
   right: 1rem;
-  bottom: 10.7rem;
+  bottom: 13.5rem;
 }
 
 .shadow-chat {
@@ -333,11 +341,26 @@ textarea:focus::placeholder {
 }
 
 @media only screen and (max-width: 600px) {
+  .ig-color {
+    display: none;
+  }
+  .rsvp-left {
+    display: none;
+  }
+  .rsvp-right {
+    display: none;
+  }
+  .text-header {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
   .diamond {
     display: none;
   }
   .doa-pesan {
-    font-size: 24px !important;
+    font-size: 32px !important;
   }
   .and-img {
     display: none !important;
@@ -472,7 +495,7 @@ textarea:focus::placeholder {
     margin-left: 1rem;
   }
   .send-btn {
-    background: #4C466D;
+    background: #4c466d;
     border-radius: 20px 0px 10px;
     padding: 10px;
     position: absolute;

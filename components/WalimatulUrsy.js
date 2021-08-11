@@ -26,7 +26,9 @@ function WalimatulUrsy() {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <h5 className="text-white pt-1">Sabtu, 28 Agustus 2021</h5>
+                <h5 className="text-white pt-1 font-poppins">
+                  Sabtu, 28 Agustus 2021
+                </h5>
               </div>
               {/* <!-- <img className="bg-tanggal" src="./img/bg-tanggal.svg" alt=""> --> */}
             </div>

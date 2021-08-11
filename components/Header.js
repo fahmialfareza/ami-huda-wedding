@@ -34,10 +34,17 @@ function Header() {
           </div>
 
           <div className="text-center mt-5">
-            <h5>
+            <p
+              className="text-header"
+              style={{
+                fontSize: "1.3rem",
+                lineHeight: "1.5",
+                
+              }}
+            >
               Dengan mengharap keberkahan dan keridhoan Allah SWT, mohon doa
               restu untuk kami
-            </h5>
+            </p>
           </div>
         </div>
 

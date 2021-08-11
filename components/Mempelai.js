@@ -11,19 +11,25 @@ function Mempelai() {
           alt=""
         />
       </div>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row flex-md-nowrap flex-sm-nowrap flex-lg-nowrap ">
-          <div className="col   align-self-center">
+          <div className="col-md-3 mt-4 mb-4 ">
+            <div className="text-center align-self-center">
+              <img src="./img/vector-akhwatfix.png" alt="" />
+            </div>
+          </div>
+
+          <div className="col-md-3 mt-4 mb-4 align-self-center">
             <div className="d-flex flex-center mb-3" data-aos="fade-right">
               <div className="align-self-center">
-                <img src="./img/swirl-aboutus.svg" alt="" />
+                <img className="mr-3" src="./img/swirl-aboutus.svg" alt="" />
               </div>
-              <div className="text-left align-self-center font-play ml-2">
+              <div className="text-center align-self-center font-play ml-2">
                 <h2 className="dark-gray">Ami</h2>
                 <h3 className="light-gray">Masturoh</h3>
               </div>
               <div>
-                <img src="./img/swirl-aboutus2.svg" alt="" />
+                <img className="ml-3" src="./img/swirl-aboutus2.svg" alt="" />
               </div>
             </div>
             <div
@@ -35,53 +41,32 @@ function Mempelai() {
                 Anak bungsu dari Bapak Sukono dan Ibu Awing (Almh) & Bapak
                 Sahori (Alm) dan Ibu Saiyah (Almh)
               </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/ami.masturoh"
+                className="ig-btn font-play "
+                data-aos="zoom-in-right"
+                data-aos-delay="200"
+              >
+                <i className="fab fa-instagram mr-2"></i>@ami.masturoh
+              </a>
             </div>
           </div>
-          <div
-            className="col mb-5 order-illustrasi align-self-center"
-            data-aos="zoom-in-up"
-            data-aos-delay="100"
-          >
-            <img
-              className="img-responsive illustrasi"
-              src="./img/illustration.svg"
-              alt=""
-            />
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://instagram.com/ami.masturoh"
-              className="ig-btn font-play masturoh"
-              data-aos="zoom-in-right"
-              data-aos-delay="200"
-            >
-              <i className="fab fa-instagram mr-2"></i>@ami.masturoh
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://instagram.com/hudagraph"
-              className="ig-btn font-play huda"
-              data-aos="zoom-in-left"
-              data-aos-delay="400"
-            >
-              <i className="fab fa-instagram mr-2"></i>@hudagraph
-            </a>
-          </div>
-          <div className="col align-self-center">
+
+          <div className="col-md-3 mt-4 mb-4 align-self-center">
             <div className="d-flex flex-center mb-2" data-aos="fade-left">
               <div className="align-self-center">
-                <img src="./img/swirl-aboutus.svg" alt="" />
+                <img className="mr-3" src="./img/swirl-aboutus.svg" alt="" />
               </div>
-              <div className="text-right align-self-center font-play mr-2">
+              <div className="text-center align-self-center font-play mr-2">
                 <h3 className="light-gray">Masykur</h3>
                 <h2 className="dark-gray">Huda</h2>
               </div>
               <div>
-                <img src="./img/swirl-aboutus2.svg" alt="" />
+                <img className="ml-3" src="./img/swirl-aboutus2.svg" alt="" />
               </div>
             </div>
-
             <div
               id="huda-description"
               className="text-center font-play"
@@ -89,6 +74,22 @@ function Mempelai() {
               data-aos-delay="100"
             >
               <p>Anak kedua dari Bapak Amirojan dan Ibu Sri Dwi Arianingsih</p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://instagram.com/hudagraph"
+                className="ig-btn font-play"
+                data-aos="zoom-in-left"
+                data-aos-delay="400"
+              >
+                <i className="fab fa-instagram mr-2"></i>@hudagraph
+              </a>
+            </div>
+          </div>
+
+          <div className="col-md-3 mt-4 mb-4">
+            <div className="text-center align-self-center">
+              <img src="./img/vector-ikhwanfix.png" alt="" />
             </div>
           </div>
         </div>
