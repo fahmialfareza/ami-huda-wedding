@@ -1,19 +1,22 @@
 import React from 'react';
+import Sound from 'react-sound';
 
-function Backsound() {
+function Backsound({
+  handleSongLoading,
+  handleSongPlaying,
+  handleSongFinishedPlaying,
+}) {
   return (
     <>
-      {/* <audio id="nasheed" hidden="hidden" loop="true">
-        <source src="/audio/theweddingnasheed.mp3" />
-      </audio> */}
-      <iframe
-        width="0"
-        height="0"
-        src="https://www.youtube.com/embed/ZJF0Sjw1aK8?controls=0&autoplay=1&loop=1"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      ></iframe>
+      <Sound
+        url="/audio/theweddingnasheed.mp3"
+        playStatus={Sound.status.PLAYING}
+        loop={true}
+        playFromPosition={0}
+        onLoading={handleSongLoading}
+        onPlaying={handleSongPlaying}
+        onFinishedPlaying={handleSongFinishedPlaying}
+      />
     </>
   );
 }
