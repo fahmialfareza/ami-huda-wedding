@@ -1,22 +1,16 @@
 import React from 'react';
-import Sound from 'react-sound';
 
-function Backsound({
-  handleSongLoading,
-  handleSongPlaying,
-  handleSongFinishedPlaying,
-}) {
+function Backsound() {
   return (
     <>
-      <Sound
-        url="/audio/theweddingnasheed.mp3"
-        playStatus={Sound.status.PLAYING}
-        loop={true}
-        playFromPosition={0}
-        onLoading={handleSongLoading}
-        onPlaying={handleSongPlaying}
-        onFinishedPlaying={handleSongFinishedPlaying}
-      />
+      <iframe
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/7H3riQe68w4?controls=0&autoplay=1&loop=1&start=36"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
     </>
   );
 }
