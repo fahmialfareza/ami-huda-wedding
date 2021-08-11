@@ -3,7 +3,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Header from '../components/Header';
-import Navbar from '../components/Navbar';
 import Mempelai from '../components/Mempelai';
 import WalimatulUrsy from '../components/WalimatulUrsy';
 import Akad from '../components/Akad';
@@ -21,8 +20,6 @@ export default function Home({ messages }) {
       </Head>
 
       <ToastContainer />
-
-      {/* <Navbar /> */}
 
       <Header />
 
