@@ -10,7 +10,7 @@ import Akad from '../components/Akad';
 import Chat from '../components/Chat';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
-// import Backsound from '../components/Backsound';
+import Backsound from '../components/Backsound';
 
 export default function Home({ messages }) {
   return (
@@ -38,7 +38,7 @@ export default function Home({ messages }) {
 
       <Footer />
 
-      {/* <Backsound /> */}
+      <Backsound />
     </>
   );
 }

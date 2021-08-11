@@ -120,7 +120,6 @@ class MyDocument extends Document {
           {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
           <script src="js/script.js"></script>
           <script src="js/timer.js"></script>
-          <script src="js/audio.js"></script>
         </body>
       </Html>
     );
