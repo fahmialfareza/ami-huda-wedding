@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 function Backsound() {
   useEffect(() => {
     document.getElementById('audioBack').play();
+    document.getElementById('audioBack').play();
   }, []);
 
   return (
@@ -11,7 +12,6 @@ function Backsound() {
         id="audioBack"
         controls
         loop
-        autoPlay
         src="audio/theweddingnasheed.mp3"
       ></audio>
     </div>
