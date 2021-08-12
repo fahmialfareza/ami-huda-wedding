@@ -9,7 +9,7 @@ function Backsound() {
         src="https://www.youtube.com/embed/7H3riQe68w4?controls=0&autoplay=1&loop=1&start=36"
         title="YouTube video player"
         frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen;"
       ></iframe>
     </>
   );
